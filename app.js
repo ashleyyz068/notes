@@ -1,29 +1,22 @@
-// let numbs = [1,2,3,4,5]
-// console.log(numbs.length); 
-// numbs.forEach((el) => console.log(el)); // for each element print it out
-// // arrow functions auto return , this key word points global 
-// const students = [
-// {
-//     firstName: "jane",
-//     lastName: "ladoka",
-//     graduated: false,
-//     DOB: 2008,
-//     siblings: ["katie", "snake"],
-//     age: function(){
-//         return year-this.DOB; 
-//     },
-// }
+// const numbs = [ 1,2,3,4,5,67,8,3,4,5,3,2,5,676
 // ]
-const DOMSelectors ={
-    form: document.querySelector("#form"), 
-    firstName:document.querySelector(".first-name"), 
-    h2s: document.querySelectorAll("h2"),
-}; 
-DOMSelectors.form.addEventListener("submit", function(event){
-    event.preventDefault(); 
-    console.log(DOMSelectors.firstName.value); 
-    DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value
-    );
+// // for loop is selection
+// function linearSearch(num, arr){ 
+//     let found; // you don't need to define something 
+//     for(let i=0; i< arr.length; i++)
+// // seection; evaluation if statements 
+//         if(arr[i]===num){
+//             found=arr[i]; 
+//             break; 
+//         }else {
+//             console.log("still looking");
+//         }
+//     if(!found){
+//         console.log("sorry not found");   
+//     }
+//     console.log(found); 
+//     return found;
+// }
 
-})
-console.log(DOMSelectors.firstName)
+// linearSearch(68, numbs); 
+
