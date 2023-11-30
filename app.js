@@ -1,22 +1,29 @@
-// const numbs = [ 1,2,3,4,5,67,8,3,4,5,3,2,5,676
-// ]
-// // for loop is selection
-// function linearSearch(num, arr){ 
-//     let found; // you don't need to define something 
-//     for(let i=0; i< arr.length; i++)
-// // seection; evaluation if statements 
-//         if(arr[i]===num){
-//             found=arr[i]; 
-//             break; 
-//         }else {
-//             console.log("still looking");
-//         }
-//     if(!found){
-//         console.log("sorry not found");   
-//     }
-//     console.log(found); 
-//     return found;
+// function greet(name){
+//     const greetPromise = new Promise(function(resolve, reject){
+//         resolve(`hello ${name}`);
+//     });
+//     return greetPromise; 
 // }
 
-// linearSearch(68, numbs); 
+// const Aaron = greet("aaron")
+// console.log(Aaron);
+// Aaron.then((result)=>{
+//     console.log(result); 
+// })
 
+// rest api 
+// learn how to access the data
+const URL = `https://api.quotable.io/random`;
+async function getData(URL){
+    try{
+        const response = await fetch (URL); 
+        console.log(response); 
+        const data = await response.json(); 
+        console.log(data); 
+        document.querySelector("h1").textContent = data.content; 
+        document.querySelector("h2").textContent = data.author; 
+    } catch (error){
+    }
+} 
+
+getData(URL);
